@@ -1,3 +1,10 @@
 <h2>Olympic games app</h2>
 <hr />
 <p>{{ (olympics$ | async)?.length }} data loaded</p>
+<h3>Medals per country</h3>
+<div>Number of Medals</div>
+<div>Number of countries</div>
+<ngx-charts-pie-chart
+    [results]="OlympicData"
+    (select)="OnCountrySelected($event)"
+></ngx-charts-pie-chart>
