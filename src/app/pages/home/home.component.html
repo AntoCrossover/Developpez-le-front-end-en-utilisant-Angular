@@ -1,5 +1,46 @@
 <h2>Olympic games app</h2>
 <hr />
+
+
+<p >
+Models per country
+
+</p>
+
+    
+        <p style="background-color:#097480;
+        border:1px solid #9FC6FF;
+        padding:20px;
+        width: 400px;
+        height: 80px;
+        /*arrondir les coins en haut à gauche et en bas à droite*/
+        border-radius: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25pt;
+        color: aliceblue;
+        ;">
+        Number of entries
+              </p>
+            
+
+            
+                <p style="background-color:#ffffff;
+                border:1px solid #097480;
+                padding:20px;
+                width: 400px;
+                height: 80px;
+                /*arrondir les coins en haut à gauche et en bas à droite*/
+                border-radius: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 25pt;
+                color:#097480;
+                ;">
+                Total number of athletes
+                      </p>
+                    
+        
+
+
 <p>{{ (olympics$ | async)?.length }} data loaded</p>
 <h3>Medals per country</h3>
 <div>Number of Medals</div>
@@ -8,3 +49,4 @@
     [results]="OlympicData"
     (select)="OnCountrySelected($event)"
 ></ngx-charts-pie-chart>
+
